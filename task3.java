@@ -1,0 +1,36 @@
+public class task3 {
+    
+}
+import java.util.Scanner;
+
+public class task3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int maxSum = arr[0];
+        int currentSum = arr[0];
+
+        for (int i = 1; i < n; i++) {
+            if (currentSum + arr[i] > arr[i]) {
+                currentSum = currentSum + arr[i];
+            } else {
+                currentSum = arr[i];
+            }
+
+            if (currentSum > maxSum) {
+                maxSum = currentSum;
+            }
+        }
+
+        System.out.println(maxSum);
+
+        sc.close();
+    }
+}
