@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class task4.java {
 
     public static int largestAltitude(int[] gain) {
         int altitude = 0;
