@@ -1,4 +1,4 @@
- import java.util.Scanner;
+import java.util.Scanner;
 
 public class Task_6 {
     public static void main(String[] args) {
@@ -11,11 +11,13 @@ public class Task_6 {
             arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 System.out.println(arr[i] + " " + arr[j]);
             }
         }
+
+        sc.close();
     }
 }
 

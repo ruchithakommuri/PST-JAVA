@@ -1,6 +1,5 @@
-import java.util.Arrays;
+public class Task1 {
 
-public class Task1.java {
     public static int[] buildArray(int[] nums) {
         int n = nums.length;
         int[] ans = new int[n];
@@ -14,6 +13,15 @@ public class Task1.java {
 
     public static void main(String[] args) {
         int[] nums = {0, 2, 1, 5, 3, 4};
-        System.out.println(Arrays.toString(buildArray(nums)));
+
+        int[] result = buildArray(nums);
+
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i]);
+
+            if (i != result.length - 1) {
+                System.out.print(" ");
+            }
+        }
     }
 }
